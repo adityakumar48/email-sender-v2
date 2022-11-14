@@ -63,7 +63,7 @@ router.post("/send",(req,res)=>{
 
     SendMail()
   // function called
-    res.send(`Function Called Successfully`)
+    res.send({"message":"Mail Sending Started"})
 })
 
 router.get("/", async(req,res)=>{
