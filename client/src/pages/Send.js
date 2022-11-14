@@ -5,7 +5,7 @@ const Send = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        axios.post("https://email-sender-v4.herokuapp.com/api/send",userRegister).then(res=>alert(res.data.message))
+        axios.post("https://email-sender-v4.herokuapp.com/api/send").then(res=>alert(res.data.message))
    
     }
   return (
