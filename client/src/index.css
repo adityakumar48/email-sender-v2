@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./Assets/study.jpg");
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc; 
+  height: 100vh; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+ /*   background image opacity */
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+
+ }
+
+#root {
+  display: flex;
+  height: 100vh;
+}
+
+.txt{
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+padding-top: 254px;
+padding-left: 50px;
+}
+.smalltext{
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  padding-left: 110px;
+}
+
+.Hero{
+  margin-top: 20%;
+}
+
+[type=email] {
+  background-image: url(https://image.flaticon.com/icons/svg/131/131155.svg);
+  font-family: 'Poppins', sans-serif;
+  background-position: calc(100% - 8px)  center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding: 1em 16px 1em 1em;
+  height: 55px;
+  width: 40%;
+  border: none;
+   border-radius: 6px;
+  outline: none;
+}
+
+[type=email]:not(:placeholder-shown) {
+  background-image: none;
+}
+
+.btn {
+  width: 180px;
+  height: 55px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #243A73;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  margin-left: 15px;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
