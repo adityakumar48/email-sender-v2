@@ -13,9 +13,16 @@ let transporter = mailer.createTransport({
     },
   });
   
+
+
+
 function SendMail(){
-    // Time Interval 
+  // For Checking Server Running or not
+  setInterval(() => {console.log(`Running at ${new Date()}`)}, 10000);
+  // Time Interval 
+
     setInterval(function () {
+      console.log()
       // Api Fetch
         axios
       .get("https://programming-quotes-api.herokuapp.com/quotes/random")
@@ -48,7 +55,7 @@ function SendMail(){
                     console.log(error);
                     console.log("Failed");
                   } else {
-                    console.log("Email Sent Successfully");
+                    console.log(`Email Sent Successfully ${i}`);
                   }
                 });
             }
@@ -63,7 +70,7 @@ router.post("/send",(req,res)=>{
 
     SendMail()
   // function called
-    res.send({"message":"Mail Sending Started"})
+    res.send({"message":"Mail Sending Function Called"})
 })
 
 router.get("/", async(req,res)=>{
